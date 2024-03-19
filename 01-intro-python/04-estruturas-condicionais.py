@@ -77,3 +77,35 @@ def liberar_acesso(email, senha):
     if email == 'admin@email.com' and senha == '123':
         print('liberado')
         
+# operador ternário 
+idade = 20
+# maior ou menor
+status = ''
+
+if idade >= 18:
+    status = 'maior'
+else:
+    status = 'menor'
+    
+status = 'maior' if idade >= 18 else 'menor'
+
+# match
+dia = 3
+match dia:
+    case 1:
+        print ('domingo')
+    case 2: 
+        print ('segunda')
+    case 3:
+        print ('terça')
+    case _: 
+        print ('dia inválido')
+        
+match dia: 
+    case 1 | 7:
+        print ('Fim de Semana')
+    case 2 | 3| 4| 5| 6:
+        print ('Dia útil')
+    case _:
+        print ('dia inválido')
+        
